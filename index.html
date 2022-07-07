@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Meta Foxonry</title>
+    <link rel="shortcut icon" href="img/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css" media="screen" />
+    <link rel="stylesheet" href="flickity.css" media="screen">
+    <script src="flickity.pkgd.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Прелоадер -->
+  <div class="preloader">
+    <div class = "block">
+        <img class = "cat" src="img/cat.webp">
+        <h1 style =  "margin-top: -10%;">Loading...</h1>
+    </div>
+  </div>
+
+ <header>
+     <div class="titleContainer">
+        <h1>Meta Foxonry</h1>
+     </div>
+     <div id="dropdown">
+         <button onclick="display()" id="dropbtn">
+             <img style = "width:55px" id="open" src="https://img.icons8.com/ios-glyphs/30/ffffff/menu-rounded.png"/>
+         </button>
+     </div>
+     <nav>
+         <a class="menu" href="#article">
+             <p>ABOUT</p>
+         </a>
+         <a class="menu" href="#str2">
+             <p>MECHANICS</p>
+         </a>
+         <a class="menu" href="#map">
+             <p>ROADMAP</p>
+         </a>
+         <a class="menu" href="#str3Block1">
+             <p>TEAM</p>
+         </a>
+         <a class="menu" href="#str4">
+             <p>FAQ</p>
+         </a>
+         <a id="twitter" class="menu" href="#twitter" onclick="window.open('https://twitter.com/Metafoxonry')">
+            <img class="icon" src="img/twitter.webp"/>
+         </a>
+         <a id="ds" class="menu" href="#ds" onclick="window.open('https://discord.gg/WcUmB7ApKC')">
+            <img class="icon" src="img/ds.webp"/>
+         </a>
+     </nav>
+     <div id="sticky"></div>
+ </header>
+ <div id="dropdown-content">
+     <div class="dropdown-text">
+         <a onclick="display()" class="menu" href="#article" ><h1>ABOUT</h1></a>
+         <a onclick="display()" class="menu" href="#article2"><h1>MECHANICS</h1></a>
+         <a onclick="display()" class="menu" href="#map2"><h1>ROADMAP</h1></a>
+         <a onclick="display()" class="menu" href="#str3Block2"><h1>TEAM</h1></a>
+         <a onclick="display()" class="menu" href="#str4Mobile"><h1>FAQ</h1></a>
+         <div class="dropdown-icon">
+             <a id="tw" class="menu" href="#twitter" onclick="window.open('https://twitter.com/Metafoxonry')">
+                 <img class="icon" src="img/twitter.webp"/>
+             </a>
+             <a id="discord" class="menu" href="#ds" onclick="window.open('https://discord.gg/WcUmB7ApKC')">
+                 <img class="icon" src="img/ds.webp"/>
+             </a>
+         </div>
+     </div>
+ </div>
+ <main id = "main-style" style="overflow: hidden; max-height: 0;" >
+     <div class="firstPhoto">
+         <img class="bg" src="img/planet.webp" />
+     </div>
+     <video class="gif" preload="auto" autoplay loop playsinline muted>-->
+        <source src="img/foxesPlanet2.webm">
+     </video>
+     <div class="marquee"><h1 class="centerTitle">Reddit traders ruin shorts on GameStop stock, the funds' losses exceeded $6 billion | 🔺 BTC $68,500 (+8.6%) | The total capitalization of the cryptocurrency market reached $2 trillion. | 🔺 ETH $4800 (+4.4%) | The world's largest automaker, Tesla, transferred some of its capital into bitcoin on February 8. | 🔺 SOL $260 (+10.3%) | Latin American nation of El Salvador became the first in history to declare bitcoin legal tender. | 🔺 SHIB $0.00008845 (+90.7%) | The Ethereum 2.0 protocol scaled the original blockchain and made it more user-friendly. | 🔺 NEAR $20.6 (+11.7%) |</h1></div>
+     <section class="article" id="article">
+         <aside class="leftShortText">
+             <h1>WELCOME</h1>
+             <p class="articleText">
+                 Meta Foxonry is a collection of <canvas class="noise"></canvas> Meta Foxes ruling the world while living on the NEAR blockchain.
+             </p>
+             <p class="articleText">
+                 By holding Meta Fox, you own something more significant than a hyped PFP. Each Meta Fox NFT acts as a unique access key to the Meta Foxonry services ecosystem.
+             </p>
+             <p class="articleText">
+                 Every single Meta Fox NFT is stakable and upgradable. It's crucial since you'll be able to earn NEAR from your NFTs while holding them.
+             </p>
+         </aside>
+         <div id="EyeImg">
+              <img class = "EyeImg" src ="img/comp.webp">
+         </div>
+         <div class="gallery js-flickity two"
+            data-flickity-options='{ "wrapAround": true, "pageDots": false, "adaptiveHeight": true }' >
+            <div class="gallery-cell"><img src="img/1r.webp" alt=""></div>
+            <div class="gallery-cell"><img class="active" src="img/18r.webp" alt=""></div>
+            <div class="gallery-cell"><img src="img/43r.webp" alt=""></div>
+            <div class="gallery-cell"><img src="img/196r.webp" alt=""></div>
+            <div class="gallery-cell"><img src="img/fifth.webp" id="fifthimage"alt=""></div>
+        </div>
+         <aside class="rightShortText">
+             <h1 id = "our-mission">OUR MISSION</h1>
+             <p class="articleText">
+                 We have two primary missions: to develop NEAR ecosystem and provide value for our holders.
+             </p>
+             <p class="articleText">
+                 The main issue of the NEAR NFT market is the lack of liquidity caused by its youth. In simple words, liquidity means the ability of the community to buy something. Higher liquidity - higher floor prices, more sales, increased quality of the projects.
+             </p>
+             <p class="articleText">
+                 So, our mission is to help the NEAR NFT ecosystem by increasing its liquidity. Every single service we're building is designed to boost the entire ecosystem and share its profits with holders.
+             </p>
+         </aside>
+     </section>
+
+     <div class="gallery js-flickity one"
+            data-flickity-options='{ "wrapAround": true, "pageDots": false, "adaptiveHeight": true  }'>
+            <div class="gallery-cell"><img src="img/1r.webp" alt=""></div>
+            <div class="gallery-cell"><img class="active" src="img/18r.webp" alt=""></div>
+            <div class="gallery-cell"><img src="img/43r.webp" alt=""></div>
+            <div class="gallery-cell"><img src="img/196r.webp" alt=""></div>
+            <div class="gallery-cell"><img src="img/fifth.webp" id="fifthimage" alt=""></div>
+    </div>
+
+     <div class="line"></div>
+
+     <section id="article2" class="article2">
+
+        <aside class="leftShortText">
+            <h1>THUNDER FOX</h1>
+            <p class="articleText">
+                Thunder Fox is a service built on the idea of limit orders adapted to the NFT space. Limit orders are made for buying assets when the right conditions suitable for the buyer appear.
+            </p>
+            <p class="articleText">
+                What will ThunderFox do for the community and ecosystem? Well, it's quite simple. It will add lots of liquidity to the market and save you plenty of time. ThunderFox - Fastest diamond hand on NEAR.
+            </p>
+            <p class="articleText">
+                ThunderFox wouldn’t spam with notifications and ask you to make a deal. All you need is to make an order with the criteria of the NFT you want, as it works directly with the marketplace and doesn’t need your help. When the first NFT you need appears, ThunderFox will immediately make a deal, leaving others without a chance to take it!
+            </p>
+        </aside>
+
+        <img src="img/fox.webp" style = "width:53%; margin-left: 22%">
+
+         <aside class="rightShortText">
+            <h1>STAKING & UPGRADING</h1>
+            <p class="articleText">
+                We have a quite simple hierarchy system of our Foxes. The income and privileges of NFT depend on its level.
+            </p>
+            <p class="articleText">
+                Common Fox is the most usual ones. We'll have about 70% of them in our supply.
+            </p>
+            <p class="articleText">
+                Wadget Foxes are the next step of evolution. Wadgets sign will appear on absolutely random Foxes with a 30% chance. If you'll notice that your Fox has a third holographic eye on its head - our congrats!
+            </p>
+            <p class="articleText">
+                Magister Foxes are the last level of Fox evolution. You'll need to burn 3 Wadget Foxes and some $MFOX tokens to get one. But don't hurry up to burn them by yourself! We'll have a special website for this.
+            </p>
+            <p class="articleText">
+                Staking is the only way to mint our functional token called $MFOX. We believe staking is an essential feature for any valuable collection because it'll allow holders to earn from their NFTs without selling them. Also, it has several utilities to keep supply and demand balanced. The elaborate tokenomics and the huge number of ways to use them guarantee its systematic growing and support the good level of income from staking.
+            </p>
+         </aside>
+
+         <div class="photo-container-5" id="Gif1">
+            <div class="photo-1">
+                <img id="pht1" src="img/eyes1.webp" />
+            </div>
+            <div class="photo-2">
+                <img id="pht2" src="img/eyes2.webp" />
+            </div>
+        </div>
+
+     </section>
+
+     <section id="str2">
+        <div class="section2">
+            <div class="textText" id="textText1">
+                <h1 class="top">THUNDER FOX</h1>
+                <p class="textGif">
+                    Thunder Fox is a service built on the idea of limit orders adapted to the NFT space. Limit orders are made for buying assets when the right conditions suitable for the buyer appear.
+                </p>
+                <p class="textGif">
+                    What will ThunderFox do for the community and ecosystem? Well, it's quite simple. It will add lots of liquidity to the market and save you plenty of time. ThunderFox - Fastest diamond hand on NEAR.
+                </p>
+                <p class="textGif">
+                    ThunderFox wouldn’t spam with notifications and ask you to make a deal. All you need is to make an order with the criteria of the NFT you want, as it works directly with the marketplace and doesn’t need your help. When the first NFT you need appears, ThunderFox will immediately make a deal, leaving others without a chance to take it!
+                </p>
+            </div>
+            <img src="img/fox.webp" class = "Fox-style">
+        </div>
+        <div class="section2">
+            <div class="photo-container-5" id="Gif1">
+                <div class="photo-1">
+                    <img id="pht1" src="img/eyes1.webp" />
+                </div>
+                <div class="photo-2">
+                    <img id="pht2" src="img/eyes2.webp" />
+                </div>
+            </div>
+            <div class="textText" id="textText2">
+                <h1 class="top">STAKING & UPGRADING</h1>
+                 <p class="textGif">
+                     We have a quite simple hierarchy system of our Foxes. The income and privileges of NFT depend on its level.
+                 </p>
+                 <p class="textGif">
+                     Common Fox is the most usual ones. We'll have about 70% of them in our supply.
+                 </p>
+                 <p class="textGif">
+                     Wadget Foxes are the next step of evolution. Wadgets sign will appear on absolutely random Foxes with a 30% chance. If you'll notice that your Fox has a third holographic eye on its head - our congrats!
+                 </p>
+                 <p class="textGif">
+                     Magister Foxes are the last level of Fox evolution. You'll need to burn 3 Wadget Foxes and some $MFOX tokens to get one. But don't hurry up to burn them by yourself! We'll have a special website for this.
+                 </p>
+                 <p class="textGif">
+                     Staking is the only way to mint our functional token called $MFOX. We believe staking is an essential feature for any valuable collection because it'll allow holders to earn from their NFTs without selling them. Also, it has several utilities to keep supply and demand balanced. The elaborate tokenomics and the huge number of ways to use them guarantee its systematic growing and support the good level of income from staking.
+                 </p>
+            </div>
+        </div>
+     </section>
+
+     <div class="line"></div>
+
+     <section id="token" style = "margin-bottom: 30px;">
+
+        <img class = "newMap" src="img/8.webp">
+        <img class = "newMap" src = "img/9.webp" style="position: absolute;">
+        <div class = "token-photo-1">
+            <img src = "img/1.webp">
+            <div>Common</div>
+        </div>
+        <div id = "photo-1-p">Staking</div>
+        <div id = "photo-1-p2">10 / day</div>
+        <img src = "img/7-555.webp" class = "token-arrow">
+        <img class = "newMap1" src="img/IMG_2132.webp"style = "margin-left: 40%; margin-top: 6.1%;">
+        <div class = "token-photo-2">
+            <img src = "img/3.webp">
+            <div>Wadget</div>
+        </div>
+        <img src = "img/7-555.webp" class = "token-arrow" style = " left: 68%;">
+        <img class = "newMap1" src="img/IMG_2132.webp"style = "margin-left: 89%; margin-top: 6.1%;">
+        <div id = "photo-2-p">Staking</div>
+        <div id = "photo-2-p2">15 / day</div>
+        <img src = "img/2-2.webp" class = "token-photo-3">
+        <p>3 Wadgets</p>
+        <div id = "photo-3-p">777 Tokens</div>
+        <div id = "photo-3-p2">Upgrading</div>
+        <div class ="Plus-img">+</div>
+        <img class = "newMap2" src="img/IMG_2132.webp"style = "position: absolute">
+        <img src = "img/7-555.webp" class = "token-arrow"style = "left: 26%; width: 11%; top: 70.7%;">
+        <img src = "img/5.webp" class = "token-photo-4">
+        <div class = "token-photo-5">
+            <img src = "img/4.webp">
+            <div>Magister</div>
+        </div>
+        <div id = "photo-5-p">Staking</div>
+        <div id = "photo-5-p2">60 / day</div>
+        <img src = "img/7-555.webp" class = "token-arrow" style = "left:68%; top:61.5%;">
+        <img class = "newMap1" src="img/IMG_2132.webp"style = "margin-left:89%; margin-top:28.1%;">
+    </section>
+
+    <section id = "token2-id" class = "token2-low" style="margin-bottom: 30px;">
+        <img class = "newMap" src="img/8-2-2.webp" style = "filter: brightness(210%);">
+        <img class = "newBlock" src = "img/9-2.webp" style = "margin-top: 10%;">
+        <div class = "token-photo-1">
+            <img src = "img/1.webp">
+            <div>Common</div>
+        </div>
+
+        <div id = "photo-1-p">Staking</div>
+        <div id = "photo-1-p2">10 / day</div>
+
+        <img class = "newBlock-mob" src="img/IMG_2132.webp"style = "margin-left: 72%;margin-top: 14.2%;">
+        <img src = "img/7-555.webp" class = "token-arrow-mob" style = "margin-top: 13.5%;" >
+        <img class = "newBlock" src = "img/9-2.webp" style = "margin-top: 45%;">
+        <div class = "token-photo-2-mobile">
+            <img src = "img/3.webp">
+            <div>Wadget</div>
+        </div>
+
+        <div id = "photo-2-p">Staking</div>
+        <div id = "photo-2-p2">15 / day</div>
+
+        <img class = "newBlock-mob" src="img/IMG_2132.webp"style = "margin-left: 72%; margin-top: 50.2%;">
+        <img src = "img/7-555.webp" class = "token-arrow-mob" style = "margin-top: 49.5%;" >
+        <img class = "newBlock" src = "img/9-2.webp" style = "margin-top: 80%;">
+        <img src = "img/2-2.webp" class = "token-photo-3">
+        <p>3 Wadgets</p>
+
+        <div id = "photo-3-p">777 Tokens</div>
+        <div id = "photo-3-p2">Upgrading</div>
+        <div class ="Plus-img-mob">+</div>
+        <img class = "Plus-Block-mob" src="img/IMG_2132.webp"style = "position: absolute">
+        <img src = "img/7-555.webp" class = "token-arrow-plus-mob"style = "">
+
+        <img src = "img/5.webp" class = "token-photo-4">
+        <img class = "newBlock" src = "img/9-2.webp" style = "margin-top: 115%;">
+        <div class = "token-photo-5-mobile">
+            <img src = "img/4.webp">
+            <div>Magister</div>
+        </div>
+
+        <div id = "photo-5-p">Staking</div>
+        <div id = "photo-5-p2">60 / day</div>
+
+        <img class = "newBlock-mob" src="img/IMG_2132.webp"style = "margin-left: 72%; margin-top: 119.2%;">
+        <img src = "img/7-555.webp" class = "token-arrow-mob" style = "margin-top: 118.5%;" >
+    </section>
+
+
+    <div class="line"></div>
+
+     <section id="map2">
+         <img class="newMap" src="img/map.webp">
+         <h1 id="title">ROADMAP</h1>
+         <div class = "roadmap-2-1">
+             <h1>1 COMMUNITY</h1>
+             <p>Organic building of our community and intensive development of our main tools. Art & strategic partnerships!</p>
+         </div>
+         <div id="second">
+             <h1>2 GREAT START</h1>
+             <p>Listings on secondary marketplaces ASAP. Opening of FoxonDAO digital doors and Wadgets reveal, be on the lookout.</p>
+         </div>
+         <div class = "roadmap-2-2">
+             <h1>3 DEDICATION</h1>
+             <p>Meet the basis of our collection - $MFOX. It will empower staking & upgrading mechanics and allow our holders to earn real money.</p>
+         </div>
+         <div id="fourth">
+             <h1>4 THE THUNDER</h1>
+             <p>ThunderFox private beta testing and following public release. Intensive improvement of our products with support of FoxonDao.</p>
+         </div>
+     </section>
+
+     <section id="map">
+         <img class="newMap" src="img/new.webp">
+         <h1 id="title">ROADMAP</h1>
+         <div class = "roadmap-1">
+             <h1>1 COMMUNITY</h1>
+             <p>Organic building of our community and intensive development of our main tools. Art & strategic partnerships!</p>
+         </div>
+         <div class = "roadmap-2">
+             <h1>2 GREAT START</h1>
+             <p>Listings on secondary marketplaces ASAP. Opening of FoxonDAO digital doors and Wadgets reveal, be on the lookout.</p>
+         </div>
+         <div class = "roadmap-3">
+             <h1>3 DEDICATION</h1>
+             <p>Meet the basis of our collection - $MFOX. It will empower staking & upgrading mechanics and allow our holders to earn real money.</p>
+         </div>
+         <div class = "roadmap-4">
+             <h1>4 THE THUNDER</h1>
+             <p>ThunderFox private beta testing and following public release. Intensive improvement of our products with support of FoxonDao.</p>
+         </div>
+     </section>
+
+     <div class="roadmapCheckFull">Check out the full version of the roadmap in our <a href="https://discord.gg/7nKtcKCSZ4">discord server</a></div>
+     <div class="line"></div>
+
+     <section id="str3Block1">
+         <h1>TEAM</h1>
+         <div class="profiles">
+             <div class="account">
+                 <img class="photo" src="img/fourthCommand.webp" />
+                 <p class="name">
+                     CEO & CTO | 0xBACD
+                 </p>
+                 <p class="inf">
+                     More than 5 years as crypto believer, more than 4 years as blockchain developer and more than a year as manager.
+                     He truly believes that crypto sphere is very underrated.
+                 </p>
+             </div>
+             <div class="account">
+                 <img class="photo" src="img/thirdCommand.webp" />
+                 <p class="name">
+                     CMO | Eisman
+                 </p>
+                 <p class="inf">
+                     Eisman has extensive experience in marketing
+                     in  crypto and NFT industries. This is his 4th NFT project as a marketer and his first time as a CMO.
+                 </p>
+             </div>
+             <div class="account">
+                 <img class="photo" src="img/secondCommand.webp" />
+                 <p class="name">
+                     Art Director | S. B.
+                 </p>
+                 <p class="inf">
+                     This person is responsible for every pixel of our project. Stanley had a background in trading before he embarked on a career as a designer. He knows how to do his work in style.
+                 </p>
+             </div>
+             <div class="account">
+                 <img class="photo" src="img/firstCommand.webp" />
+                 <p class="name">
+                     CM | Po11y
+                 </p>
+                 <p class="inf">
+                     Polly has huge experience in community management for projects of any type - it doesn't matter is it NFT or fundamental crypto, she for sure can handle anything!
+                 </p>
+             </div>
+         </div>
+
+     </section>
+
+     <section id="str3Block2">
+         <h1>TEAM</h1>
+         <div class="profiles">
+             <div class="column">
+                 <div class="account" style = "margin-bottom: 36px">
+                     <img class="photo" src="img/fourthCommand.webp" />
+                     <p class="name">
+                         CEO & CTO | 0xBACD
+                     </p>
+                     <p class="inf">
+                         More than 5 years as crypto believer, more than 4 years as blockchain developer and more than a year as manager.
+                         He truly believes that crypto sphere is very underrated.
+                     </p>
+                 </div>
+                 <div class="account">
+                     <img class="photo" src="img/thirdCommand.webp" />
+                     <p class="name">
+                         CMO | Eisman
+                     </p>
+                     <p class="inf">
+                         Eisman has extensive experience in marketing
+                         in  crypto and NFT industries. This is his 4th NFT project as a marketer and his first time as a CMO.
+                     </p>
+                 </div>
+             </div>
+             <div class="column">
+                 <div class="account">
+                     <img class="photo" src="img/secondCommand.webp" />
+                     <p class="name">
+                         Art Director | S. B.
+                     </p>
+                     <p class="inf">
+                         This person is responsible for every pixel of our project. Stanley had a background in trading before he embarked on a career as a designer. He knows how to do his work in style.
+                     </p>
+                 </div>
+                 <div class="account">
+                     <img class="photo" src="img/firstCommand.webp" />
+                     <p class="name">
+                         CM | Po11y
+                     </p>
+                     <p class="inf">
+                         Polly has huge experience in community management for projects of any type - it doesn't matter is it NFT or fundamental crypto, she for sure can handle anything!
+                     </p>
+                 </div>
+             </div>
+         </div>
+
+     </section>
+
+     <section class="end">
+         <h1>F.A.Q.</h1>
+         <h2>HOW CAN I GET ONE?</h2>
+         <p>There are really a lot of ways! The most obvious is to mint it, but keep an eye on our social media to follow actual giveaways & collabs.</p>
+         <h2>WHAT'S MINT PRICE? HOW MUCH FOXES WILL BE MINTED?</h2>
+         <p>TBA for now (To Be Announced).</p>
+         <h2>CAN I MINT EARLIER THAN OTHERS? CAN I GET SOME DISCOUNT?</h2>
+         <p>Sure there will be an opportunity! Check out whitelist rules in our discord server.</p>
+         <h2>WHAT ABOUT SECONDARY MARKET?</h2>
+         <p>We will do our best to list on leading NFT marketplaces of NEAR. Also, we'll take 6% of royalty to fund DAO treasury and support future project development.</p>
+     </section>
+
+     <div class="line2"></div>
+
+     <section id="str4Mobile">
+         <div class="bottom">
+             <p id="bottomEmail">GET ON THE LIST</p>
+             <div class="email" style = "display:flex;">
+                 <input id = "email-adress-mobile" placeholder="Email Address" />
+                 <button onclick="SendEmail()" class="arrowIcon" style = "position: relative;">
+                     <img src="https://img.icons8.com/external-kmg-design-basic-outline-kmg-design/32/ffffff/external-right-arrow-arrows-kmg-design-basic-outline-kmg-design-1.png"/>
+                 </button>
+             </div>
+         </div>
+         <div class="bottom">
+             <div id="icon">
+                 <a class="menu" href="#twitter" onclick="window.open('https://twitter.com/Metafoxonry')">
+                     <img class="icon2" src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"/>
+                 </a>
+                 <a class="menu" href="#ds" onclick="window.open('https://discord.gg/7nKtcKCSZ4')">
+                     <img class="icon2" src="https://img.icons8.com/ios-filled/50/ffffff/discord--v1.png"/>
+                 </a>
+             </div>
+             <p id="textBottom1">
+                 LIBERTE EGALITE FRATERNITE
+             </p>
+             <p id="textBottom2">
+                 Copyright © 2022 Meta Foxonry
+             </p>
+         </div>
+     </section>
+
+     <section id="str4">
+         <div class="bottom1">
+             <p>GET ON THE LIST</p>
+             <div class="email">
+                 <input id = "email-adress" placeholder="Email Address" />
+                 <button onclick="SendEmail()" class="arrowIcon">
+                    <img src="https://img.icons8.com/external-kmg-design-basic-outline-kmg-design/32/ffffff/external-right-arrow-arrows-kmg-design-basic-outline-kmg-design-1.png"/>
+                </button>
+             </div>
+         </div>
+         <div id="cat">
+            <img class="cat" src="img/cat.webp">
+         </div>
+         <div class="bottom2">
+             <div id="footer-icon">
+                 <a class="menu2" href="#twitter" onclick="window.open('https://twitter.com/Metafoxonry')" style = "text-decoration: none;">
+                     <img class="icon2" src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"/>
+                 </a>
+                 <a class="menu2" href="#ds" onclick="window.open('https://discord.gg/7nKtcKCSZ4')">
+                     <img class="icon2" src="https://img.icons8.com/ios-filled/50/ffffff/discord--v1.png"/>
+                 </a>
+             </div>
+             <p id="textBottom1">
+                 LIBERTE EGALITE FRATERNITE
+             </p>
+             <p id="textBottom2">
+                 Copyright © 2022 Meta Foxonry
+             </p>
+         </div>
+     </section>
+ </main>
+</body>
+</html>
